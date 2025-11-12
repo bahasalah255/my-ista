@@ -35,6 +35,32 @@ body {
 .nav-item-link:hover i {
   color: #508FE3;
 }
+body.dark-mode {
+  background-color: #121212 !important;
+  color: #ffffff;
+}
+body.dark-mode .contact-section p {
+  color: white;
+}
+body.dark-mode .navbar {
+  background-color: #1f1f1f !important;
+}
+
+body.dark-mode .nav-item-link {
+  color: #d1e2ff !important;
+}
+
+body.dark-mode .nav-item-link:hover {
+  color: #87b7ff !important;
+}
+
+body.dark-mode #nav-bar {
+  color: #87b7ff;
+}
+
+body.dark-mode .nav-item-link i {
+  color: #d1e2ff;
+}
 /* Partie De contenu */
 .sec{
 	margin: 30px;
