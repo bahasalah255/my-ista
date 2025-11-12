@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M101 - Se situer au regard du métier | MyISTA</title>
+  <link rel="stylesheet" href="style_modules.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Navigation -->
+ <nav class="navbar navbar-expand-lg bg-light sticky-top">
+    <div class="container-fluid">
+      <img src="../Image.png" class="d-inline-block align-text-top" id="logo-image" width="90px">
+      <a class="navbar-brand" id="nav-bar" href="#">MyISTA</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav" id="navbar-nav">
+          <li class="nav-item"><a class="nav-link nav-item-link" href="../index.html">Accueill</a></li>
+          <li class="nav-item"><a class="nav-link nav-item-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link nav-item-link" href="#modules">Nos Modules</a></li>
+          <li class="nav-item"><a class="nav-link nav-item-link" href="#contact">Contact Us</a></li>
+          <li class="nav-item">
+            <a class="nav-link nav-item-link" href="#" id="dark-toggle"><i data-lucide="moon"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Module Header -->
+  <div class="module-header">
+    <div class="module-content">
+      <a href="../index.html#modules" class="back-button"><i class="bi bi-arrow-left"></i> Retour aux modules</a>
+      <h1>M104 - Développer des Sites Web Statiques</h1>
+      <p class="lead mt-3">Module Fondamental | Durée: 110h</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="module-content">
+    
+    <!-- Introduction Section -->
+    <section class="section-module">
+      <h3><i class="bi bi-info-circle"></i> Introduction</h3>
+      <p>
+       Créer des sites web statiques fonctionnels et esthétiques en utilisant HTML, CSS et les bonnes pratiques du web.
+      </p>
+    </section>
+
+    <!-- Objectives Section -->
+    <section class="section-module">
+      <h3><i class="bi bi-bullseye"></i> Objectifs du module</h3>
+      <ul class="objectives-list">
+        <li>Structurer une page web avec HTML5</li>
+        <li>Styliser et mettre en page avec CSS3</li>
+        <li>Créer des mises en page responsives</li>
+        <li>Optimiser les images et les ressources</li>
+        <li>Utiliser les frameworks CSS (Bootstrap, etc.)</li>
+      </ul>
+    </section>
+
+    <!-- Content Section -->
+    <section class="section-module">
+      <h3><i class="bi bi-book"></i> Contenu du module</h3>
+      <ul class="content-list">
+        <li>Les fondamentaux HTML5</li>
+        <li>Éléments sémantiques HTML</li>
+        <li>CSS3 : sélecteurs, propriétés, mise en page</li>
+        <li>Flexbox et CSS Grid</li>
+        <li>Design responsive</li>
+        <li>Les frameworks CSS</li>
+        <li>L'accessibilité web (WCAG)</li>
+        <li>L'optimisation et la performance</li>
+      </ul>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="section-module">
+      <h3><i class="bi bi-folder2-open"></i> Ressources pédagogiques</h3>
+      <div class="resources-section">
+        <div class="resource-card">
+          <i class="bi bi-file-pdf"></i>
+          <h5>Documentation</h5>
+          <p class="small">Guide complet du module</p>
+          <a href="../assets/documents/m101-doc.pdf" class="btn btn-sm btn-outline-primary" id="button">Télécharger</a>
+        </div>
+        
+        <div class="resource-card">
+          <i class="bi bi-file-earmark-text"></i>
+          <h5>Contrôle Continu</h5>
+          <p class="small">CC & Exercices</p>
+          <a href="../assets/documents/m101-cc.pdf" class="btn btn-sm btn-outline-primary" id="button">Accéder</a>
+        </div>
+        
+        <div class="resource-card">
+          <i class="bi bi-file-earmark-check"></i>
+          <h5>Examens</h5>
+          <p class="small">Sujets d'examen</p>
+          <a href="../assets/documents/m101-exams.pdf" class="btn btn-sm btn-outline-primary" id="button">Voir</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="Quiz">
+      
+    </section>
+
+    <!-- Navigation between modules -->
+    <div class="nav-modules">
+      <a href="javascript:history.back()" class="nav-button">
+        <i class="bi bi-chevron-left"></i> Module précédent
+      </a>
+      <a href="../index.html#modules" class="nav-button">
+        <i class="bi bi-grid"></i> Tous les modules
+      </a>
+      <a href="m105.html" class="nav-button">
+        Module suivant <i class="bi bi-chevron-right"></i>
+      </a>
+    </div>
+
+  </main>
+
+  <footer style="background-color: #013f9c; color: white; text-align: center; padding: 30px; margin-top: 60px;">
+    <p>&copy; 2025 MyISTA. Tous droits réservés.</p>
+    <p>Made with ❤️ by MyISTA</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Dark mode toggle
+    document.getElementById('dark-toggle').addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+    });
+
+    // Load dark mode preference
+    if (localStorage.getItem('darkMode') === 'true') {
+      document.body.classList.add('dark-mode');
+    }
+  </script>
+</body>
+</html>

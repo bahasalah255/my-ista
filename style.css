@@ -372,13 +372,14 @@ body.dark-mode .nav-item-link i {
 .footer-f {
   margin: 0 ;
   background-color: #013f9c;
-  height: 70px;
+  height: 150px;
 }
+
 .footer-f p {
   display: flex;
   justify-content: center;
   color: white;
-  margin: 10px;
+  margin: 30px;
 }
 /* ======= Responsive ======= */
 @media (max-width: 768px) {
