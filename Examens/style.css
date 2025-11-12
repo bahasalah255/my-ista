@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -46,3 +47,37 @@ body {
 	font-weight: 600;
 	color: #0c2750;
 }
+.content{
+	margin-top: 35px;
+	padding: 15px;
+}
+details{
+      margin-top: 8px;
+      margin-left: 16px;
+      cursor: pointer;
+}
+summary{
+	color: #1d4ed8;
+	list-style: none;
+	position: relative;
+	padding-left: 20px;
+}
+summary::before{
+	content: "›";
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: rotate(0deg);
+	transition: transform 0.2s ease;
+}
+details[open] summary::before{
+	transform: rotate(90deg);
+}
+  details a {
+      margin-top: 5px;
+      margin-left: 20px;
+      color: #3a5e91;
+      font-size: 0.95rem;
+	  text-decoration: none;
+    }
+	
