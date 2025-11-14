@@ -471,3 +471,40 @@ body.dark-mode .nav-item-link i {
   }
 }
 
+    /* Header color */
+    .table-custom thead {
+        background-color: #0046AD !important;
+        color: white !important;
+    }
+
+    /* Primary buttons */
+    .btn-primary {
+        background-color: #0046AD !important;
+        border-color: #003a8f !important;
+    }
+    .btn-primary:hover {
+        background-color: #003a8f !important;
+    }
+
+    /* Table borders */
+    .table-custom td, 
+    .table-custom th {
+        border-color: #0046AD !important;
+    }
+
+    /* Search bar icon bg */
+    .input-group-text {
+        background-color: #0046AD !important;
+        color: white !important;
+        border-color: #0046AD !important;
+    }
+
+    /* Border search input */
+    #searchInput {
+        border-color: #0046AD !important;
+    }
+
+    #searchInput:focus {
+        box-shadow: 0 0 5px #0046AD !important;
+        border-color: #0046AD !important;
+    }

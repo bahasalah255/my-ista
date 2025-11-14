@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My ISTA</title>
+  <link rel="icon" href="Image.png" type="image/png">
   <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
@@ -29,7 +30,9 @@
           <li class="nav-item"><a class="nav-link nav-item-link" href="#home">Accueill</a></li>
           <li class="nav-item"><a class="nav-link nav-item-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link nav-item-link" href="#modules">Nos Modules</a></li>
+          <li class="nav-item"><a class="nav-link nav-item-link" href="#exam">Nos Exams</a></li>
           <li class="nav-item"><a class="nav-link nav-item-link" href="#contact">Contact Us</a></li>
+
           <li class="nav-item">
             <a class="nav-link nav-item-link" href="#" id="dark-toggle"><i data-lucide="moon"></i></a>
           </li>
@@ -79,7 +82,7 @@ Le Stagaire apprend à concevoir la structure d’un site, à gérer la mise en 
 Objectif : maîtriser la conception d’interfaces web simples et esthétiques.</p>
          <div class="d-flex flex-column">
     <a href="modules/m104.html" class="btn btn-outline-primary mb-2">Documentation Du Module</a>
-    <a href="#" class="btn btn-outline-primary">CC & Efms</a>
+    
   </div>
         </div>
       </div>
@@ -93,7 +96,7 @@ Le Stagaire apprend à analyser un problème, à le décomposer en étapes simpl
 Objectif : développer une pensée logique et structurée pour résoudre efficacement les problèmes.</p>
            <div class="d-flex flex-column">
     <a href="modules/m102.html" class="btn btn-outline-primary mb-2">Documentation Du Module</a>
-    <a href="#" class="btn btn-outline-primary">CC & Efms</a>
+    
   </div>
         </div>
       </div>
@@ -107,7 +110,7 @@ L’étudiant apprend à créer des pages web dynamiques, à gérer les formulai
 Objectif : développer des sites web interactifs capables de traiter et gérer des données.</p>
            <div class="d-flex flex-column">
     <a href="modules/m107.html" class="btn btn-outline-primary mb-2">Documentation Du Module</a>
-    <a href="#" class="btn btn-outline-primary">CC & Efms</a>
+    
   </div>
         </div>
       </div>
@@ -122,7 +125,7 @@ Il aborde les concepts liés aux technologies émergentes, à la transformation 
 Objectif : développer une culture numérique solide et une vision globale des technologies actuelles.</p>
  <div class="d-flex flex-column">
     <a href="modules/EGTSA106.html" class="btn btn-outline-primary mb-2">Documentation Du Module</a>
-    <a href="#" class="btn btn-outline-primary">CC & Efms</a>
+    
   </div>
       </div>
     </div>
@@ -133,7 +136,7 @@ Il permet également de comprendre la démarche de formation et de se situer dan
 Objectif : favoriser l’intégration dans le milieu professionnel et renforcer la motivation dans le parcours de formation.</p>
  <div class="d-flex flex-column">
     <a href="modules/m101.html" class="btn btn-outline-primary mb-2">Documentation Du Module</a>
-    <a href="#" class="btn btn-outline-primary">CC & Efms</a>
+    
   </div>
       </div>
     </div>
@@ -145,7 +148,7 @@ Il apprend à concevoir des programmes structurés autour des concepts de classe
 Objectif : maîtriser les bases de la POO pour concevoir des applications modulaires et réutilisables.</p>
 <div class="d-flex flex-column">
     <a href="modules/m103.html" class="btn btn-outline-primary mb-2">Documentation Du Module</a>
-    <a href="#" class="btn btn-outline-primary">CC & Efms</a>
+    
   </div>
       </div>
     </div>
@@ -157,7 +160,7 @@ Il aborde les notions de variables, fonctions, événements, manipulation du DOM
 Objectif : rendre les sites web dynamiques et améliorer l’expérience utilisateur.</p>
 <div class="d-flex flex-column">
     <a href="modules/m105.html" class="btn btn-outline-primary mb-2">Documentation Du Module</a>
-    <a href="#" class="btn btn-outline-primary">CC & Efms</a>
+    
   </div>
       </div>
     </div>
@@ -168,7 +171,7 @@ L’apprenant découvre le langage SQL, les opérations CRUD et la modélisation
 Objectif : acquérir les compétences nécessaires pour structurer et exploiter efficacement les données.</p>
 <div class="d-flex flex-column">
     <a href="modules/m106.html" class="btn btn-outline-primary mb-2">Documentation Du Module</a>
-    <a href="#" class="btn btn-outline-primary">CC & Efms</a>
+    
   </div>
       </div></div>
      
@@ -179,7 +182,7 @@ Il aborde les notions de confidentialité, d’intégrité, d’authentification
 Objectif : comprendre les risques liés aux systèmes d’information et adopter les comportements sécuritaires appropriés.</p>
 <div class="d-flex flex-column">
     <a href="modules/m108.html" class="btn btn-outline-primary mb-2">Documentation Du Module</a>
-    <a href="#" class="btn btn-outline-primary">CC & Efms</a>
+    
   </div>
       </div></div>
     </div>
@@ -194,6 +197,91 @@ Objectif : comprendre les risques liés aux systèmes d’information et adopter
 </section>
 
 </div>
+<section class="container my-5  animate-on-scroll" id="exam">
+
+    <h2 class="text-center mb-4 fw-bold" style="color:#0046AD;">
+   Examens & EFM – Développement Digital
+</h2>
+
+    <!-- SEARCH BAR -->
+    <div class="input-group mb-3">
+        <span class="input-group-text"><i class="bi bi-search"></i></span>
+        <input type="text" id="searchInput" class="form-control" placeholder="Rechercher un module...">
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped align-middle shadow-sm table-custom" id="examTable">
+            <thead class="text-center">
+                <tr>
+                    <th style="width: 60%;">Module</th>
+                    <th>Exam</th>
+                    <th>EFM</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Culture et techniques avancées du numérique</td>
+                    <td class="text-center"><a href="Examens/Examen.html#EGTSA106" class="btn btn-primary btn-sm"><i class="bi bi-pencil-square me-1"></i>Exam</a></td>
+                    <td class="text-center"><a href="Examens/Examen.html#EGTSA106" class="btn btn-success btn-sm"><i class="bi bi-journal-text me-1"></i>EFM</a></td>
+                </tr>
+
+                <tr>
+                    <td>Se situer au regard du métier et de la démarche de formation</td>
+                    <td class="text-center"><a href="Examens/Examen.html#m101" class="btn btn-primary btn-sm"><i class="bi bi-pencil-square me-1"></i>Exam</a></td>
+                    <td class="text-center"><a href="Examens/Examen.html#m101" class="btn btn-success btn-sm"><i class="bi bi-journal-text me-1"></i>EFM</a></td>
+                </tr>
+
+                <tr>
+                    <td>Acquérir les bases de l’algorithmique</td>
+                    <td class="text-center"><a href="Examens/Examen.html#m102" class="btn btn-primary btn-sm"><i class="bi bi-pencil-square me-1"></i>Exam</a></td>
+                    <td class="text-center"><a href="Examens/Examen.html#m102" class="btn btn-success btn-sm"><i class="bi bi-journal-text me-1"></i>EFM</a></td>
+                </tr>
+
+                <tr>
+                    <td>Programmer en Orienté Objet</td>
+                    <td class="text-center"><a href="Examens/Examen.html#m103" class="btn btn-primary btn-sm"><i class="bi bi-pencil-square me-1"></i>Exam</a></td>
+                    <td class="text-center"><a href="Examens/Examen.html#m103" class="btn btn-success btn-sm"><i class="bi bi-journal-text me-1"></i>EFM</a></td>
+                </tr>
+
+                <tr>
+                    <td>Développer des sites web statiques</td>
+                    <td class="text-center"><a href="Examens/Examen.html#m104" class="btn btn-primary btn-sm"><i class="bi bi-pencil-square me-1"></i>Exam</a></td>
+                    <td class="text-center"><a href="Examens/Examen.html#m104" class="btn btn-success btn-sm"><i class="bi bi-journal-text me-1"></i>EFM</a></td>
+                </tr>
+
+                <tr>
+                    <td>Programmer en JavaScript</td>
+                    <td class="text-center"><a href="Examens/Examen.html#m105" class="btn btn-primary btn-sm"><i class="bi bi-pencil-square me-1"></i>Exam</a></td>
+                    <td class="text-center"><a href="Examens/Examen.html#m105" class="btn btn-success btn-sm"><i class="bi bi-journal-text me-1"></i>EFM</a></td>
+                </tr>
+
+                <tr>
+                    <td>Manipuler des bases de données</td>
+                    <td class="text-center"><a href="Examens/Examen.html#m106" class="btn btn-primary btn-sm"><i class="bi bi-pencil-square me-1"></i>Exam</a></td>
+                    <td class="text-center"><a href="Examens/Examen.html#m106" class="btn btn-success btn-sm"><i class="bi bi-journal-text me-1"></i>EFM</a></td>
+                </tr>
+
+                <tr>
+                    <td>Développer des sites web dynamiques</td>
+                    <td class="text-center"><a href="Examens/Examen.html#m107" class="btn btn-primary btn-sm"><i class="bi bi-pencil-square me-1"></i>Exam</a></td>
+                    <td class="text-center"><a href="Examens/Examen.html#m107" class="btn btn-success btn-sm"><i class="bi bi-journal-text me-1"></i>EFM</a></td>
+                </tr>
+
+                <tr>
+                    <td>S’initier à la sécurité des systèmes d’information</td>
+                    <td class="text-center"><a href="Examens/Examen.html#m108" class="btn btn-primary btn-sm"><i class="bi bi-pencil-square me-1"></i>Exam</a></td>
+                    <td class="text-center"><a href="Examens/Examen.html#m108" class="btn btn-success btn-sm"><i class="bi bi-journal-text me-1"></i>EFM</a></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
+
 <section id="contact" class="contact-section animate-on-scroll">
   <h2>Contactez-nous</h2>
   <p>Vous avez une question ou une suggestion ? Envoyez-nous un message et nous vous répondrons rapidement.</p>
@@ -338,7 +426,15 @@ document.addEventListener("DOMContentLoaded", () => {
     errorEl.textContent = message;
   }
 });
+   document.getElementById("searchInput").addEventListener("keyup", function () {
+        let filter = this.value.toLowerCase();
+        let rows = document.querySelectorAll("#examTable tbody tr");
 
+        rows.forEach(row => {
+            let moduleText = row.querySelector("td:first-child").textContent.toLowerCase();
+            row.style.display = moduleText.includes(filter) ? "" : "none";
+        });
+    });
   </script>
 </body>
 </html>

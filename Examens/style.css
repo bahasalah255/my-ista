@@ -106,4 +106,41 @@ details[open] summary::before{
       font-size: 0.95rem;
 	  text-decoration: none;
     }
-	
+.content {
+  margin-top: 35px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.reference {
+  border: 2px solid transparent;
+  padding: 8px 12px;
+  font-size: 18px;
+  background-color: #f3f0f0;
+  border-radius: 8px;
+  box-shadow: 10px 20px 30px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.reference:hover {
+  border-color:  #0046AD;
+  transform: translateY(5px);
+}
+.exams {
+  display: flex;
+  flex-direction: column;
+}
+.button_docu {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 15px 15px;
+  background-color: #e3ebf8;
+  transition: 0.3s;
+}
+.butt_docu:hover {
+  background-color: #508FE3;
+  transform: translateY(-5px);
+}
