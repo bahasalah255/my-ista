@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz JavaScript M105</title>
+  <link rel="stylesheet" href="quiz.css"> <!-- CSS style li drna f M103/M104 -->
+</head>
+<body>
+
+  <div class="quiz-container">
+    <h1>Quiz JavaScript M105</h1>
+
+    <!-- Partie 1 -->
+    <div id="quiz-js1" class="quiz-box">
+      <h2 id="question-js1"></h2>
+      <div id="options-js1"></div>
+      <button id="next-js1" style="display:none;">Suivant</button>
+      <p id="progress-js1"></p>
+    </div>
+
+    <!-- Partie 2 -->
+    <div id="quiz-js2" class="quiz-box" style="display:none;">
+      <h2 id="question-js2"></h2>
+      <div id="options-js2"></div>
+      <button id="next-js2" style="display:none;">Suivant</button>
+      <p id="progress-js2"></p>
+    </div>
+
+    <!-- Partie 3 -->
+    <div id="quiz-js3" class="quiz-box" style="display:none;">
+      <h2 id="question-js3"></h2>
+      <div id="options-js3"></div>
+      <button id="next-js3" style="display:none;">Suivant</button>
+      <p id="progress-js3"></p>
+    </div>
+
+    <!-- Résultats finaux -->
+    <div id="final-results" style="display:none;">
+      <h2>Résultats finaux</h2>
+      <p id="final-score"></p>
+      <div id="breakdown"></div>
+      <button id="restart">Recommencer</button>
+    </div>
+
+  </div>
+
+  <script src="m105.js"></script>
+</body>
+</html>
