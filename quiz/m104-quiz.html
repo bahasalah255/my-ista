@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz M104 - Web Statique</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="quiz.css">
+<style>
+  .option-btn.correct { background-color: #28a745; color: white; }
+  .option-btn.wrong { background-color: #dc3545; color: white; }
+  .option-btn { text-align: left; width: 100%; }
+  .quiz-container h5.question { min-height: 3rem; }
+</style>
+</head>
+<body>
+<div class="container my-5">
+  <h2 class="text-center mb-5">Quiz M104 - Web Statique</h2>
+
+  <!-- Quiz HTML -->
+  <div class="quiz-container shadow p-4 rounded mb-5" id="quiz-html">
+    <h4 class="mb-4">Quiz HTML</h4>
+    <h5 id="question-html" class="question mb-3"></h5>
+    <div id="options-html" class="d-grid gap-2"></div>
+    <button id="next-html" class="btn btn-primary mt-3">Suivant</button>
+  </div>
+
+  <!-- Quiz CSS -->
+  <div class="quiz-container shadow p-4 rounded mb-5" id="quiz-css">
+    <h4 class="mb-4">Quiz CSS</h4>
+    <h5 id="question-css" class="question mb-3"></h5>
+    <div id="options-css" class="d-grid gap-2"></div>
+    <button id="next-css" class="btn btn-success mt-3">Suivant</button>
+  </div>
+
+  <!-- Quiz Bootstrap -->
+  <div class="quiz-container shadow p-4 rounded mb-5" id="quiz-bs">
+    <h4 class="mb-4">Quiz Bootstrap</h4>
+    <h5 id="question-bs" class="question mb-3"></h5>
+    <div id="options-bs" class="d-grid gap-2"></div>
+    <button id="next-bs" class="btn btn-warning mt-3">Suivant</button>
+  </div>
+
+  <!-- Final Results -->
+  <div id="final-results" class="mt-5 text-center" style="display:none;">
+    <h3>Résultats finaux</h3>
+    <p id="final-score"></p>
+  </div>
+</div>
+</body>
+<script src="m104.js"></script>
+</html>

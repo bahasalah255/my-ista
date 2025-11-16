@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Quiz M107 – PHP & Sites Dynamiques</title>
+  <link rel="stylesheet" href="quiz.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+  .option-btn.correct { background-color: #28a745; color: white; }
+  .option-btn.wrong { background-color: #dc3545; color: white; }
+  .option-btn { text-align: left; width: 100%; }
+  .quiz-container h5.question { min-height: 3rem; }
+</style>
+</head>
+<body>
+  <div class="container my-5 quiz-container">
+    <h2 class="text-center mb-4">Quiz M107 — Développer des sites web dynamiques (PHP & MySQL)</h2>
+
+    <!-- PART 1: Concepts PHP -->
+    <div class="quiz-box shadow p-4 mb-4" id="quiz-part1">
+      <h4 class="mb-3">Part 1 — Concepts PHP</h4>
+      <div id="question-p1" class="mb-3 question"></div>
+      <div id="options-p1" class="d-grid gap-2 mb-3"></div>
+      <div class="d-flex justify-content-between align-items-center">
+        <p id="progress-p1" class="small text-muted"></p>
+        <button id="next-p1" class="btn btn-primary" style="display:none;">Suivant</button>
+      </div>
+    </div>
+
+    <!-- PART 2: Formulaires -->
+    <div class="quiz-box shadow p-4 mb-4" id="quiz-part2">
+      <h4 class="mb-3">Part 2 — Formulaires</h4>
+      <div id="question-p2" class="mb-3 question"></div>
+      <div id="options-p2" class="d-grid gap-2 mb-3"></div>
+      <div class="d-flex justify-content-between align-items-center">
+        <p id="progress-p2" class="small text-muted"></p>
+        <button id="next-p2" class="btn btn-success" style="display:none;">Suivant</button>
+      </div>
+    </div>
+
+    <!-- PART 3: MySQL et CRUD -->
+    <div class="quiz-box shadow p-4 mb-4" id="quiz-part3">
+      <h4 class="mb-3">Part 3 — MySQL & CRUD</h4>
+      <div id="question-p3" class="mb-3 question"></div>
+      <div id="options-p3" class="d-grid gap-2 mb-3"></div>
+      <div class="d-flex justify-content-between align-items-center">
+        <p id="progress-p3" class="small text-muted"></p>
+        <button id="next-p3" class="btn btn-warning" style="display:none;">Suivant</button>
+      </div>
+    </div>
+
+    <!-- PART 4: Bonnes pratiques et sécurité -->
+    <div class="quiz-box shadow p-4 mb-4" id="quiz-part4">
+      <h4 class="mb-3">Part 4 — Bonnes pratiques & sécurité</h4>
+      <div id="question-p4" class="mb-3 question"></div>
+      <div id="options-p4" class="d-grid gap-2 mb-3"></div>
+      <div class="d-flex justify-content-between align-items-center">
+        <p id="progress-p4" class="small text-muted"></p>
+        <button id="next-p4" class="btn btn-info" style="display:none;">Suivant</button>
+      </div>
+    </div>
+
+    <!-- Final results -->
+    <div id="final-results" class="mt-4 text-center" style="display:none;">
+      <h3>Résultats finaux</h3>
+      <p id="final-score" class="lead"></p>
+      <div id="breakdown" class="text-start mx-auto" style="max-width:640px"></div>
+      <a href="#" id="restart" class="btn btn-outline-primary mt-3">Recommencer le quiz</a>
+    </div>
+  </div>
+
+  <script src="m107.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

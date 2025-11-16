@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz M109 – Culture numérique</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="quiz.css">
+  <style>
+    body { background: #f4f7ff; font-family: Arial, sans-serif; color: #0b2447; }
+    .quiz-container { max-width: 800px; margin: auto; }
+    .quiz-box { background: #fff; border-radius: 14px; padding: 20px; margin-bottom: 20px; box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
+    .question { font-weight: 600; font-size: 1.1rem; color: #0046AD; min-height: 50px; }
+    .option-btn { border-radius: 10px; padding: 10px; text-align: left; font-weight: 600; transition: 0.2s; width: 100%; }
+    .option-btn.correct { background-color: #28a745; color: white; }
+    .option-btn.wrong { background-color: #dc3545; color: white; }
+    .option-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,70,173,0.2); }
+    #final-results { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container my-5 quiz-container">
+    <h2 class="text-center mb-4">Quiz M109 — Culture et techniques avancées du numérique</h2>
+
+    <!-- Partie 1 -->
+    <div class="quiz-box" id="quiz-part1">
+      <h4 class="mb-3">Partie 1 — Concepts de base du numérique</h4>
+      <div id="question-p1" class="question mb-3"></div>
+      <div id="options-p1" class="d-grid gap-2 mb-3"></div>
+      <div class="d-flex justify-content-between align-items-center">
+        <p id="progress-p1" class="small text-muted"></p>
+        <button id="next-p1" class="btn btn-primary" style="display:none;">Suivant</button>
+      </div>
+    </div>
+
+    <!-- Partie 2 -->
+    <div class="quiz-box" id="quiz-part2">
+      <h4 class="mb-3">Partie 2 — Création de contenu numérique</h4>
+      <div id="question-p2" class="question mb-3"></div>
+      <div id="options-p2" class="d-grid gap-2 mb-3"></div>
+      <div class="d-flex justify-content-between align-items-center">
+        <p id="progress-p2" class="small text-muted"></p>
+        <button id="next-p2" class="btn btn-success" style="display:none;">Suivant</button>
+      </div>
+    </div>
+
+    <!-- Partie 3 -->
+    <div class="quiz-box" id="quiz-part3">
+      <h4 class="mb-3">Partie 3 — Recherche d’information</h4>
+      <div id="question-p3" class="question mb-3"></div>
+      <div id="options-p3" class="d-grid gap-2 mb-3"></div>
+      <div class="d-flex justify-content-between align-items-center">
+        <p id="progress-p3" class="small text-muted"></p>
+        <button id="next-p3" class="btn btn-warning" style="display:none;">Suivant</button>
+      </div>
+    </div>
+
+    <!-- Partie 4 -->
+    <div class="quiz-box" id="quiz-part4">
+      <h4 class="mb-3">Partie 4 — Collaboration et réseaux sociaux</h4>
+      <div id="question-p4" class="question mb-3"></div>
+      <div id="options-p4" class="d-grid gap-2 mb-3"></div>
+      <div class="d-flex justify-content-between align-items-center">
+        <p id="progress-p4" class="small text-muted"></p>
+        <button id="next-p4" class="btn btn-info" style="display:none;">Suivant</button>
+      </div>
+    </div>
+
+    <!-- Résultats finaux -->
+    <div id="final-results" class="text-center mt-4">
+      <h3>Résultats finaux</h3>
+      <p id="final-score" class="lead"></p>
+      <div id="breakdown" class="text-start mx-auto" style="max-width:640px;"></div>
+      <a href="#" id="restart" class="btn btn-outline-primary mt-3">Recommencer le quiz</a>
+    </div>
+  </div>
+
+  <script src="egtsa.js"></script>
+</body>
+</html>
