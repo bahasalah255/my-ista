@@ -14,11 +14,9 @@ It provides structured access to modules, quizzes, exams, and academic resources
 ---
 
 ## 🖼️ Preview
+![My-ISTA Screenshot](preview.png) 
 
-<!-- Replace the line below with your actual screenshot once uploaded to the repo -->
-<!-- ![My-ISTA Screenshot](./assets/preview.png) -->
 
-> 📸 *Add your screenshot: save it as `/assets/preview.png` in your repo, then uncomment the line above!*
 
 ---
 
