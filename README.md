@@ -3,6 +3,23 @@
 **My-ISTA** is an educational web platform designed for ISTA students.  
 It provides structured access to modules, quizzes, exams, and academic resources in a clean and organized interface.
 
+<div align="center">
+
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Site-blue?style=for-the-badge)](https://bahasalah255.github.io/my-ista/)
+[![GitHub Stars](https://img.shields.io/github/stars/bahasalah255/my-ista?style=for-the-badge)](https://github.com/bahasalah255/my-ista/stargazers)
+[![GitHub License](https://img.shields.io/github/license/bahasalah255/my-ista?style=for-the-badge)](LICENSE)
+
+</div>
+
+---
+
+## 🖼️ Preview
+
+<!-- Replace the line below with your actual screenshot once uploaded to the repo -->
+<!-- ![My-ISTA Screenshot](./assets/preview.png) -->
+
+> 📸 *Add your screenshot: save it as `/assets/preview.png` in your repo, then uncomment the line above!*
+
 ---
 
 ## 🚀 Features
